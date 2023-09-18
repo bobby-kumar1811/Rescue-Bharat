@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/fullBG.jpg); /* Replace 'your-image.jpg' with the path to your background image */
+    background-repeat: no-repeat;
+    background-size: cover; /*Adjust this based on your needs*/
+    /* background-attachment: fixed; Keeps the background image fixed as the page scrolls */
+}
+div {
+  margin: 12px 0 0 300px;   /* Top, Right, Bottom, Left */
+  padding: 0px;           /* All sides */
+  /* You can adjust the values as needed */
+}
+header {
+    background-color: #79bcec; /* Background color for the header */
+    padding: 10px; /* Add padding for spacing within the header */
+    text-align: center; /* Center align the content within the header */
+    display: flex; /* Use flexbox for layout control */
+    align-items: center;
+    justify-content: center;
+
+}
+header img {
+    width: 20px; /* Set the desired width */
+    height: 20px; /* Set the desired height */
+    width: 50px; /* Set the width of the image as needed */
+    height: auto; /* Maintain the image's aspect ratio */
+    margin-right: 10px; /* Add margin to the right for spacing */
+    border-radius: 50%; /* Make the image circular */
+}
+header hr {
+    border: none; /* Remove the default border */
+    border-top: 2px solid #333; /* Add a 2px solid line as the top border */
+    margin: 20px 0; /* Add space from the top (adjust the value as needed) */
+}
+
+
+/* Style the parent container */
+.parent-container {
+    display: flex;
+    flex-direction: column; /* Stack containers vertically */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    justify-content: space-between; /* Adjust content spacing */
+    justify-content: center; /* Center containers vertically */
+    align-items: center; /* Center containers horizontally */
+    height: 0vh; /* Adjust the height as needed */
+    background-color: #f0f0f0; /* Background color for the gap */
+}
+
+/* Style the containers */
+.sub-cont {
+    padding-left: 80px;
+    height:250px;
+     width:800px;
+    padding: 0px; /* Add padding for content */
+     border-radius: 15px; /* Create rounded edges */
+     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5); /* Add a box shadow for the popping effect */
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 5px solid #040404; /* Add borders for containers (optional) */
+    margin: 1px 0; /* Add margin to create the gap between containers */
+
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+
+}
+ .left-column {
+    flex: 1;
+    border-right: 1px         solid #000;
+    padding: 10px;
+
+  }
+
+  /* Right column style */
+  .right-column {
+    flex: 1;
+    padding: 10px ,10px, 10px, 10px;
+    text-align: center;
+
+  }
+
+
+
+/* bobby */
+#login{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(27, 127, 242);
+    color:green;
+    margin: 15px 0;
+    height: 25px;
+    width: 200px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

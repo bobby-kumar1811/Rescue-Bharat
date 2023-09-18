@@ -1,21 +1,30 @@
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config()
-}
+const express = require("express");
+const app = express();
+const port = 8080;
+const path = require("path");
 
-const express = require('express')
-const app = express()
+app.set("view engine","ejs");
+app.set("views", path.join(__dirname,"views"));
 
-const expresesLayouts = require('express-ejs-layouts')
+app.use(express.static(path.join(__dirname,"public")));
 
-app.set('view engine', 'ejs')
-app.set('views', __dirname + '/views')
-app.set('layout', 'layouts/layout')
-app.use(expresesLayouts)
-app.use(express.static('public'))
+app.get("/",(req,res)=>{
+    res.render("home.ejs",{port});
+});
 
-// routes
-const indexRoute = require('./routes/index')
+app.get("/home",(req,res)=>{
+    res.render("home.ejs",{port});
+});
 
-app.use('/', indexRoute)
+app.get("/home/administration",(req,res)=>{
+    res.render("administration.ejs");
+});
 
-app.listen(process.env.PORT || 8000)
+app.get("/home/user",(req,res)=>{
+    res.render("user.ejs");
+});
+
+app.listen(port,()=>{
+    console.log("port is listenig");
+});
+
