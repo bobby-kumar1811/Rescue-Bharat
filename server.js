@@ -1,17 +1,21 @@
-const express = require('express');
-const app = express();
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config()
+}
 
-const expresesLayouts = require('express-ejs-layouts');
+const express = require('express')
+const app = express()
 
-app.set('view engine', 'ejs');
-app.set('views', __dirname + '/views');
-app.set('layout', 'layouts/layout');
-app.use(expresesLayouts);
-app.use(express.static('public'));
+const expresesLayouts = require('express-ejs-layouts')
+
+app.set('view engine', 'ejs')
+app.set('views', __dirname + '/views')
+app.set('layout', 'layouts/layout')
+app.use(expresesLayouts)
+app.use(express.static('public'))
 
 // routes
-const indexRoute = require('./routes/index');
+const indexRoute = require('./routes/index')
 
-app.get('/', indexRoute);
+app.use('/', indexRoute)
 
-app.listen(process.env.PORT || 8000);
+app.listen(process.env.PORT || 8000)
