@@ -23,5 +23,5 @@ npm run dev
 ### run the server
 
 ```bash
-npm run
+npm run start
 ```
