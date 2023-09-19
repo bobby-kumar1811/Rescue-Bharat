@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -129,16 +129,16 @@ table {
 }
 /*new code*/
 body{
-    background-image: url(resc3.jpg); 
+    background-image: url(/resc3.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
-    background-attachment: fixed; 
+    background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     position: relative;
 }
 body::before {
     content: "";
-    background: rgba(0, 0, 0, 0.3); 
+    background: rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 0;
     left: 0;
@@ -155,10 +155,10 @@ body::before {
     flex-direction: column;
 }
 .image {
-    width: 60px; 
+    width: 60px;
     height: 60px;
    padding-right: 20px;
-  
+
 }
 .image img {
     width: 100%;
@@ -167,10 +167,10 @@ body::before {
 }
 
 .image1 {
-    width: 60px; 
+    width: 60px;
     height: 60px;
    padding-right: 20px;
-  
+
 }
 .image1 img {
     width: 100%;
@@ -183,7 +183,7 @@ body::before {
 
 
 .text {
-    
+
     background:transparent;
     border-radius: 15px;
     border-color: black;
@@ -195,17 +195,17 @@ body::before {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8); 
-    transition: transform 0.2s ease; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+    transition: transform 0.2s ease;
     color:rgb(11, 11, 11);
-    border: 8px solid #bab5b5; 
-    margin: 10px; 
+    border: 8px solid #bab5b5;
+    margin: 10px;
 }
 .text:hover{
     transform: translatey(-5px);
 }
 .content {
-    display: flex; 
+    display: flex;
     align-items: center;
     text-decoration: none;
 }
@@ -230,12 +230,12 @@ h2, p {
     .container {
         flex-direction: column;
         text-align: center;
-        
+
     }
 
     .image {
         padding-right: 0;
-       
+
     }
   .text {
         flex: 1;
@@ -243,24 +243,24 @@ h2, p {
 }
 header {
    background:linear-gradient(45deg,rgb(17, 82, 115) , rgb(123, 239, 241)) ;
-    padding: 10px; 
-    text-align: center; 
-    display: flex; 
-    align-items: center; 
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
-     
+
 }
 header img {
-    width: 20px; 
-    height: 20px; 
-    width: 50px; 
-    height: auto; 
-    margin-right: 10px; 
-    border-radius: 50%; 
+    width: 20px;
+    height: 20px;
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
 }
 header hr {
-    border: none; 
-    border-top: 2px solid #333; 
-    margin: 20px 0; 
+    border: none;
+    border-top: 2px solid #333;
+    margin: 20px 0;
 }
 
