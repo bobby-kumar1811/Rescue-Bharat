@@ -127,3 +127,140 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+/*new code*/
+body{
+    background-image: url(resc3.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center;
+    position: relative;
+}
+body::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.3); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.container {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    justify-content: center;
+    padding-top: 100px;
+    flex-direction: column;
+}
+.image {
+    width: 60px; 
+    height: 60px;
+   padding-right: 20px;
+  
+}
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.image1 {
+    width: 60px; 
+    height: 60px;
+   padding-right: 20px;
+  
+}
+.image1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.text-content {
+    flex: 1;
+}
+
+
+.text {
+    
+    background:transparent;
+    border-radius: 15px;
+    border-color: black;
+    max-width: 90%;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8); 
+    transition: transform 0.2s ease; 
+    color:rgb(11, 11, 11);
+    border: 8px solid #bab5b5; 
+    margin: 10px; 
+}
+.text:hover{
+    transform: translatey(-5px);
+}
+.content {
+    display: flex; 
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.hidden {
+    display: none;
+}
+h2{
+    font-size: 18px;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+h2, p {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .image {
+        padding-right: 0;
+       
+    }
+  .text {
+        flex: 1;
+  }
+}
+header {
+   background:linear-gradient(45deg,rgb(17, 82, 115) , rgb(123, 239, 241)) ;
+    padding: 10px; 
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+     
+}
+header img {
+    width: 20px; 
+    height: 20px; 
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px; 
+    border-radius: 50%; 
+}
+header hr {
+    border: none; 
+    border-top: 2px solid #333; 
+    margin: 20px 0; 
+}
+
