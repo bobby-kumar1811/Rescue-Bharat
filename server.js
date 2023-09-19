@@ -1,30 +1,22 @@
-const express = require("express");
-const app = express();
-const port = 8080;
-const path = require("path");
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config()
+}
 
-app.set("view engine","ejs");
-app.set("views", path.join(__dirname,"views"));
+const express = require('express')
+const app = express()
+const expressLayouts = require('express-ejs-layouts')
+const bodyParser = require('body-parser')
 
-app.use(express.static(path.join(__dirname,"public")));
+app.set('view engine', 'ejs')
+app.set('views', __dirname + '/app/pages')
+app.set('layout', 'layouts/layout')
+app.use(expressLayouts)
+app.use(express.static('app/public'))
+app.use(bodyParser.urlencoded({ limit: '10mb', extended: false }))
 
-app.get("/",(req,res)=>{
-    res.render("home.ejs",{port});
-});
+const routes = require('./app/lib/routing').Router(__dirname + '/app/routes')
+app.use('/', routes.find('index'))
+app.use('/register', routes.find('register'))
+app.use('/login', routes.find('login'))
 
-app.get("/home",(req,res)=>{
-    res.render("home.ejs",{port});
-});
-
-app.get("/home/administration",(req,res)=>{
-    res.render("administration.ejs");
-});
-
-app.get("/home/user",(req,res)=>{
-    res.render("user.ejs");
-});
-
-app.listen(port,()=>{
-    console.log("port is listenig");
-});
-
+app.listen(process.env.PORT || 8000)
