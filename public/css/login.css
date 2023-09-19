@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#container{
+    /* border: 5px solid black; */
+    height: 100vh;
+    width: 100vw;
+    /* background-color: aqua; */
+}
+
+#bg-img{
+    max-width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+#left_side{
+    /* border: 2px solid black; */
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    /* background-color: red; */
+    left: 5px;
+    top: 5px;
+}
+
+#right_side{
+    /* border: 2px solid black; */
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    /* background-color: green; */
+    left:50%;
+    top:5px;
+}
+
+#login{
+    border: 2px solid black;
+    border-color: rgb(18, 206, 209);
+    box-shadow: 5px 5px 100px 10px rgb(18, 206, 209);
+    border-radius: 15px;
+    background-color: white;
+    height: 70%;
+    width: 50%;
+    position: absolute;
+    left:184px;
+    top:101px;
+    display: flex;
+    flex-direction: column;
+}
+
+#login div{
+    height: 150px;
+}
+
+#one h2{
+    text-align: center;
+    margin: 50px;
+}
+#one span{
+    color: red;
+}
+
+#two{
+    margin-left: 50px;
+}
+#two input{
+    height: 39px;
+    width: 279px;
+    border-radius: 11px;
+}
+#two h6{
+    text-align: end;
+    margin-right: 50px;
+    text-decoration: none;
+}
+#three{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 71px 13px 71px;
+}
+#three button{
+    height: 39px ;
+    font-size: 1.5em;
+    border-radius: 11px;
+    background-color: rgb(26, 200, 203);
+}
+#three span{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#three img{
+    height: 50px;
+    width: 50px;
+    margin-left: 80px;
+}
+#four{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#four button{
+    background-color: rgb(26, 200, 203);
+}
+#four button a {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#container{
+    /* border: 5px solid black; */
+    height: 100vh;
+    width: 100vw;
+    /* background-color: aqua; */
+}
+
+#bg-img{
+    max-width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+#left_side{
+    /* border: 2px solid black; */
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    /* background-color: red; */
+    left: 5px;
+    top: 5px;
+}
+
+#right_side{
+    /* border: 2px solid black; */
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    /* background-color: green; */
+    left:50%;
+    top:5px;
+}
+
+#signup{
+    border: 2px solid black;
+    border-color: rgb(18, 206, 209);
+    box-shadow: 5px 5px 100px 10px rgb(18, 206, 209);
+    border-radius: 15px;
+    background-color: white;
+    height: 70%;
+    width: 50%;
+    position: absolute;
+    left:184px;
+    top:101px;
+    display: flex;
+    flex-direction: column;
+}
+
+#signup div{
+    height: 150px;
+}
