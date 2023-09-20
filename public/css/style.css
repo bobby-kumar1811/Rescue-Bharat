@@ -3,97 +3,122 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: url(/fullBG.jpg); /* Replace 'your-image.jpg' with the path to your background image */
-    background-repeat: no-repeat;
-    background-size: cover; /*Adjust this based on your needs*/
-    /* background-attachment: fixed; Keeps the background image fixed as the page scrolls */
+
+body {
+    height: 100vh;
+    width: 100vw;
 }
-div {
-  margin: 12px 0 0 300px;   /* Top, Right, Bottom, Left */
-  padding: 0px;           /* All sides */
-  /* You can adjust the values as needed */
-}
+
 header {
-    background-color: #79bcec; /* Background color for the header */
-    padding: 10px; /* Add padding for spacing within the header */
-    text-align: center; /* Center align the content within the header */
-    display: flex; /* Use flexbox for layout control */
-    align-items: center;
-    justify-content: center;
-
-}
-header img {
-    width: 20px; /* Set the desired width */
-    height: 20px; /* Set the desired height */
-    width: 50px; /* Set the width of the image as needed */
-    height: auto; /* Maintain the image's aspect ratio */
-    margin-right: 10px; /* Add margin to the right for spacing */
-    border-radius: 50%; /* Make the image circular */
-}
-header hr {
-    border: none; /* Remove the default border */
-    border-top: 2px solid #333; /* Add a 2px solid line as the top border */
-    margin: 20px 0; /* Add space from the top (adjust the value as needed) */
-}
-
-
-/* Style the parent container */
-.parent-container {
-    display: flex;
-    flex-direction: column; /* Stack containers vertically */
-    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
-    justify-content: space-between; /* Adjust content spacing */
-    justify-content: center; /* Center containers vertically */
-    align-items: center; /* Center containers horizontally */
-    height: 0vh; /* Adjust the height as needed */
-    background-color: #f0f0f0; /* Background color for the gap */
-}
-
-/* Style the containers */
-.sub-cont {
-    padding-left: 80px;
-    height:250px;
-     width:800px;
-    padding: 0px; /* Add padding for content */
-     border-radius: 15px; /* Create rounded edges */
-     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5); /* Add a box shadow for the popping effect */
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 5px solid #040404; /* Add borders for containers (optional) */
-    margin: 1px 0; /* Add margin to create the gap between containers */
-
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-
-}
- .left-column {
-    flex: 1;
-    border-right: 1px         solid #000;
+    /* background:linear-gradient(45deg,rgb(17, 82, 115) , rgb(123, 239, 241)) ; */
     padding: 10px;
+    /* text-align: center; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    justify-content: space-between;
 
-  }
-
-  /* Right column style */
-  .right-column {
-    flex: 1;
-    padding: 10px ,10px, 10px, 10px;
-    text-align: center;
-
-  }
-
-
-
-/* bobby */
-#login{
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: rgb(27, 127, 242);
-    color:green;
-    margin: 15px 0;
-    height: 25px;
-    width: 200px;
 }
-a{
+
+#Bharat{
+    display: flex;
+}
+
+li{
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(18, 206, 209);
+}
+
+#nav {
+    /* border: 2px solid black; */
+    width: 610px;
+}
+
+
+header img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-weight: 500;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+#container {
+    /* background-color: yellow; */
+    /* border: 2px solid black; */
+    margin: auto;
+    margin-top: 50px;
+    width: 90vw;
+    height: 600px;
+    background-image: url(/fullBG.jpg);
+    background-size: cover;
+}
+
+.about {
+    background-color: white;
+    border: 5px solid white;
+    box-shadow: 10px 10px 100px 90px white;
+    /* margin-left: 15px; */
+    height: 600px;
+    justify-content: space-between;
+    width: 614px;
+}
+
+.content {
+    /* border: 2px solid black; */
+    /* background-color: aqua; */
+    height: 400px;
+    text-align: left;
+}
+
+.content h1 {
+    /* border: 2px solid black; */
+    font-size: 3.5em;
+    text-align: left;
+}
+
+.content h1 span {
+    color: rgb(18, 206, 209);
+}
+
+.content p {
+    height: 200px;
+    /* border : 2px solid black */
+}
+
+.content h3 {
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+.login {
+    /* border: 2px solid black; */
+    /* background-color: yellow; */
+    height: 180px;
+    text-align: center;
+}
+
+a {
     text-decoration: none;
-    color: white;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+button {
+    height: 60px;
+    width: 200px;
+    background-color: rgb(18, 206, 209);
+    border-radius: 55px;
 }

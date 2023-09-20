@@ -201,9 +201,11 @@ body::before {
     border: 8px solid #bab5b5;
     margin: 10px;
 }
+
 .text:hover{
     transform: translatey(-5px);
 }
+
 .content {
     display: flex;
     align-items: center;

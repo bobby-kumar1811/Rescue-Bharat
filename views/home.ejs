@@ -10,49 +10,39 @@
 
 <body>
     <header>
-        <img src="/logo-res.jpg" alt="Your Image">
-        <h1 style="text-align: center;font-weight: 500; font-stretch: expanded; font-size: 36px;font-weight: bolder;">
-            RESCUE BHARAT</h1>
-        <hr>
+        <div id="Bharat">
+            <img src="/logo.png" alt="logo">
+            <h1>RESCUE BHARAT</h1>
+        </div>
+        <div id="nav">
+            <ul type="none">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
     </header>
-    <div class="container">
-        <div class="sub-cont">
-            <button id="login"><a href="http://localhost:<%= port %>/home/administration">Login as administration</a></button>
-
-            <div class="left-column">
-                <!-- Content for the left column (empty) -->
-            </div>
-            <div class="right-column">
-                <p style="font-family: Arial, sans-serif;font-weight: bold;font-size: 30px;">Register as rescue agency
-                </p>
-
-
-
-                <hr style="border-color: #000; margin: 50px 0;  margin-left: 100px; margin-right: 40px; ">
-
-                <p style="font-family: Arial, sans-serif;font-weight: bold;font-size: 25px;">Register as admin of the
-                    organization</p>
-                <p style="font-family: Arial, sans-serif;font-weight: bold;font-size: 15px;">Authenticated Documentation
-                    is required</p>
+    <main>
+        <!-- <img src="fullBG.jpg" alt="bgimg"> -->
+        <div id="container">
+            <div class="about">
+                <div class="content">
+                    <h1>we rescue india from <span>natural diaster</span></h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, nostrum.
+                    </p>
+                    <h3>Lets rescue inida together by resgistering yourself in our application</h3>
+                </div><hr>
+                <div class="login">
+                    <h2>Login as</h2>
+                    <button><a href="http://localhost:8080/home/administration">Rescue Agency</a></button>
+                    <button><a href="http://localhost:8080/home/user">User</a></button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="sub-cont">
-            <button id="login"><a href="http://localhost:<%= port %>/home/user">Login as user</a></button>
+    </main>
+    <footer>
+    </footer>
 
-            <div class="left-column">
-
-                <!-- Content for the left column (empty) -->
-            </div>
-            <div class="right-column">
-                <p style="font-family: Arial, sans-serif;font-weight: bold;font-size: 30px;">Login as admin</p>
-                <hr style="border-color: #000; margin: 50px 0;margin-left: 100px; margin-right: 40px; ">
-                <p style="font-family: Arial, sans-serif;font-weight: bold;font-size: 25px;">Login portal of the Rescue
-                    Agency which is already registered</p>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
