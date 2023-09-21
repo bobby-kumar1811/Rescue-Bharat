@@ -32,6 +32,10 @@ app.get("/home/administration/signup",(req,res)=>{
     res.render("signup.ejs",{port});
 });
 
+app.get("/home/administration/agency",(req,res)=>{
+    res.render("agency.ejs");
+})
+
 app.listen(port,()=>{
     console.log("port is listenig");
 });

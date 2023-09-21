@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency</title>
+    <link rel="stylesheet" href="/css/agency.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/notification.png" alt="notification">
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <div class="up">
+                <div id="right">
+                    <div id="logo">
+                        <img src="/fireAgency.png" alt="logo">
+                    </div>
+                    <div id="name">
+                        <h1>Fire Departent</h1>
+                        <h3>Maheshtala , West Bangal</h3>
+                    </div>
+                </div>
+                <div id="left">
+                    <h2>Number of workers</h2>
+                    <h1>50</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="down">
+                <div id="down-up">
+                    <h1>
+                        Other Agencies
+                    </h1>
+                    <div class="search">
+                        <form action="#">
+                            <input type="text"
+                                   placeholder=" Search Agency"
+                                   name="search">
+                            <button>
+                                <img src="/images.png" alt="search-icon">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div id="down-down">
+                    <div id="buttons">
+                        <div class="agencies">
+                            <img src="/fireAgency.png" alt="agen1">
+                            <h3>Fire department</h3>
+                    </div>
+                        <div class="agencies">
+                            <img src="/ambulance.jpeg" alt="agen2">
+                            <h3>Ambulance</h3>
+                    </div>
+                        <div class="agencies">
+                            <img src="/Police.png" alt="agen3">
+                            <h3>Police</h3>
+                    </div>
+                        <div class="agencies">
+                            <img src="/Hospitals.jpeg" alt="agen4">
+                            <h3>Hospitals</h3>
+                    </div>
+                    </div>
+                    <div id="dis">
+                        <div id="info">
+                            <img src="/mahes.jpeg" alt="map">
+                            <span> location :- Maheshtala , West Bangal</span>
+                            <span> contact info :- abc1234@gmail.com</span>
+                            <span> Agency number :- +91 3459499823</span>
+                            <button>Chat now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+    <script>
+
+        let agen = document.querySelectorAll(".agencies");
+        console.log(agen);
+        let but = document.querySelector("#dis");
+        console.log(but);
+
+            for(a of agen){
+                count =1;
+                a.addEventListener("click",()=>{
+                    console.log(count);
+                    count++;
+                    if (count%2 != 0) {
+                        console.log("odd");
+                        but.style.display = "none";
+                    }
+                    else{
+                        console.log("even");
+                        but.style.display = "";
+                    }
+                })
+            }
+    </script>
+</html>

@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    /* background-color: aqua; */
+    height: 50px;
+}
+
+header div{
+    /* background-color:yellow; */
+    text-align: end;
+    margin-right: 100px;
+    padding-top: 20px;
+}
+
+header div img{
+    height: 30px;
+    width: 30px;
+}
+
+.up{
+    height: 150px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+#right {
+    display: flex;
+    height: 200px;
+    width: 600px;
+    /* background-color: yellow; */
+}
+
+#logo img{
+    height: 100px;
+    width: 200px;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+}
+
+#name h1,h3{
+    padding-top: 15px ;
+}
+
+#left{
+    margin-right: 250px;
+}
+
+#left h2,h1{
+    padding-top: 15px;
+}
+
+#left h1{
+    text-align: center;
+    color: rgb(18, 206, 209);
+}
+
+#down-up{
+    display: flex;
+    justify-content: space-between;
+}
+
+#down-up h1{
+    margin-left: 40px;
+}
+
+.search{
+    margin-top: 15px;
+    margin-right: 250px;
+}
+
+.search input[type=text]{
+    width:300px;
+    height:25px;
+    border-radius:25px;
+}
+
+.search button img{
+    height: 25px ;
+    width: 25px;
+}
+
+.search button{
+    /* background-color: #0074D9; */
+    /* color: #f2f2f2; */
+    float: right;
+    /* padding: 5px 10px; */
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+#down-down{
+    /* border: 2px solid black; */
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#buttons{
+    /* border: 2px solid black; */
+    width: 450px;
+    margin: 45px;
+}
+
+.agencies{
+    border: 2px solid black;
+    display: flex;
+    height: 70px;
+}
+
+.agencies h3{
+    margin-left: 25px;
+}
+
+.agencies img{
+    height: 50px;
+    width: 100px;
+}
+
+#info{
+    border: 2px solid black;
+    height: 450px;
+    width: 350px;
+    margin-top: 15px;
+    margin-right: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+#info img{
+    height: 300px;
+    width: 347px;
+    margin-bottom: 15px;
+}
+#info span{
+    margin-bottom: 15px;
+}
+
+#info button{
+    height: 30px;
+    width: 200px;
+    margin-left: 50px;
+}
+
+#dis{
+    display: flex;
+}
+

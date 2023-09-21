@@ -94,6 +94,10 @@ body{
     border-radius: 11px;
     background-color: rgb(26, 200, 203);
 }
+#three button a{
+    text-decoration: none;
+    color:  black;
+}
 #three span{
     text-align: center;
     margin-top: 20px;

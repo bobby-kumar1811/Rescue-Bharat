@@ -22,9 +22,13 @@ header {
 
 #Bharat{
     display: flex;
+    /* background-color: rgb(18, 206, 209) ; */
+    width: 400px;
+    /* box-shadow: 10px 0 50px  rgb(18, 206, 209); */
 }
 
 li{
+    padding-top: 15px;
     display: inline-block;
     margin-left: 50px;
     font-size: 2em;
@@ -39,12 +43,16 @@ li{
 
 
 header img {
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
     margin-right: 10px;
+    background-color: rgb(18, 206, 209,0.6);
+    border-radius: 37px;
 }
 
 header h1 {
+    width: 400px;
+    padding-top: 15px;
     font-weight: 500;
     font-size: 36px;
     font-weight: bolder;
