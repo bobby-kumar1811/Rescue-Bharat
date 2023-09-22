@@ -10,15 +10,28 @@ body {
 }
 
 header{
-    /* background-color: aqua; */
+    background-color: rgb(18, 206, 209);
     height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#nav{
+    /* border: 2px solid black; */
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
 }
 
 header div{
     /* background-color:yellow; */
-    text-align: end;
+    /* text-align: end; */
     margin-right: 100px;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 header div img{
@@ -27,9 +40,10 @@ header div img{
 }
 
 .up{
-    height: 150px;
+    height: 125px;
     width: 100vw;
     display: flex;
+    margin-top: 15px;
     justify-content: space-between;
     /* background-color: aqua; */
 }
@@ -68,9 +82,24 @@ header div img{
     color: rgb(18, 206, 209);
 }
 
+.down{
+
+    position: relative;
+}
+
+.down::before{
+    background-image: url(/fullBG.jpg);
+    background-size: cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.6;
+}
+
 #down-up{
     display: flex;
     justify-content: space-between;
+    isolation: isolate;
 }
 
 #down-up h1{
@@ -109,6 +138,7 @@ header div img{
     height: 500px;
     display: flex;
     justify-content: space-between;
+    isolation: isolate;
 }
 
 #buttons{
@@ -118,7 +148,8 @@ header div img{
 }
 
 .agencies{
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    border-bottom: 2px solid black;
     display: flex;
     height: 70px;
 }
@@ -134,12 +165,13 @@ header div img{
 
 #info{
     border: 2px solid black;
-    height: 450px;
+    height: 475px;
     width: 350px;
     margin-top: 15px;
     margin-right: 250px;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 #info img{
@@ -149,12 +181,17 @@ header div img{
 }
 #info span{
     margin-bottom: 15px;
+    padding-left: 15px;
 }
 
 #info button{
     height: 30px;
     width: 200px;
     margin-left: 50px;
+    background-color: rgb(18, 206, 209);
+    color: black;
+    font-size: 1.5em;
+    border-radius: 15px;
 }
 
 #dis{

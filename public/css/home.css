@@ -90,6 +90,7 @@ header h1 {
     /* border: 2px solid black; */
     font-size: 3.5em;
     text-align: left;
+    margin-bottom: 15px;
 }
 
 .content h1 span {
@@ -97,11 +98,12 @@ header h1 {
 }
 
 .content p {
-    height: 200px;
+    height: 70px;
     /* border : 2px solid black */
 }
 
 .content h3 {
+    /* border: 2px solid black; */
     text-align: center;
     /* border: 2px solid black; */
 }

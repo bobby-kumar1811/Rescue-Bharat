@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agency</title>
     <link rel="stylesheet" href="/css/agency.css">
 </head>
+
 <body>
     <header>
+        <div id="nav">
+            <a href="http://localhost:8080/home">Home</a><a href="#">About Us</a><a href="#">Contact Us</a>
+        </div>
         <div>
             <img src="/notification.png" alt="notification">
         </div>
@@ -37,9 +42,7 @@
                     </h1>
                     <div class="search">
                         <form action="#">
-                            <input type="text"
-                                   placeholder=" Search Agency"
-                                   name="search">
+                            <input type="text" placeholder=" Search Agency" name="search">
                             <button>
                                 <img src="/images.png" alt="search-icon">
                             </button>
@@ -49,28 +52,32 @@
                 <div id="down-down">
                     <div id="buttons">
                         <div class="agencies">
+                            <img src="/Food.png" alt="agen5">
+                            <h3>Food and Supplies Department</h3>
+                        </div>
+                        <div class="agencies">
                             <img src="/fireAgency.png" alt="agen1">
                             <h3>Fire department</h3>
-                    </div>
+                        </div>
                         <div class="agencies">
-                            <img src="/ambulance.jpeg" alt="agen2">
+                            <img src="/ambu.png" alt="agen2" style="margin-top: 5px;">
                             <h3>Ambulance</h3>
-                    </div>
+                        </div>
                         <div class="agencies">
-                            <img src="/Police.png" alt="agen3">
+                            <img src="/Police.png" alt="agen3" style="height: 65px; width: 102px;">
                             <h3>Police</h3>
-                    </div>
+                        </div>
                         <div class="agencies">
-                            <img src="/Hospitals.jpeg" alt="agen4">
+                            <img src="/Hospitals.jpeg" alt="agen4" style="height: 65px;">
                             <h3>Hospitals</h3>
-                    </div>
+                        </div>
                     </div>
                     <div id="dis">
                         <div id="info">
                             <img src="/mahes.jpeg" alt="map">
-                            <span> location :- Maheshtala , West Bangal</span>
-                            <span> contact info :- abc1234@gmail.com</span>
-                            <span> Agency number :- +91 3459499823</span>
+                            <span> <b>Location</b> :- Maheshtala , West Bangal</span>
+                            <span> <b>Contact Info</b> :- abc1234@gmail.com</span>
+                            <span> <b>Agency number</b> :- +91 3459499823</span>
                             <button>Chat now</button>
                         </div>
                     </div>
@@ -79,27 +86,28 @@
         </div>
     </main>
 </body>
-    <script>
+<script>
 
-        let agen = document.querySelectorAll(".agencies");
-        console.log(agen);
-        let but = document.querySelector("#dis");
-        console.log(but);
+    let agen = document.querySelectorAll(".agencies");
+    console.log(agen);
+    let but = document.querySelector("#dis");
+    console.log(but);
 
-            for(a of agen){
-                count =1;
-                a.addEventListener("click",()=>{
-                    console.log(count);
-                    count++;
-                    if (count%2 != 0) {
-                        console.log("odd");
-                        but.style.display = "none";
-                    }
-                    else{
-                        console.log("even");
-                        but.style.display = "";
-                    }
-                })
+    for (a of agen) {
+        count = 1;
+        a.addEventListener("click", () => {
+            console.log(count);
+            count++;
+            if (count % 2 != 0) {
+                console.log("odd");
+                but.style.display = "none";
             }
-    </script>
+            else {
+                console.log("even");
+                but.style.display = "";
+            }
+        })
+    }
+</script>
+
 </html>
